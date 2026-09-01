@@ -1,0 +1,5 @@
+defense,pair_type,planned_pair_keys_seen,complete_pairs,clean_unauthorized,poison_unauthorized,unauthorized_rd,clean_unsafe_state,poison_unsafe_state,unsafe_state_rd,poison_attempted_chain,poison_executed_chain,structured_output_failed_members
+D0,cross,144,141,7,60,0.375886524822695,6,60,0.3829787234042553,16,16,3
+D0,same,48,47,1,24,0.48936170212765956,1,23,0.46808510638297873,7,7,1
+D4,cross,144,141,6,36,0.2127659574468085,0,0,0.0,13,0,3
+D4,same,48,47,1,9,0.1702127659574468,0,0,0.0,2,0,1

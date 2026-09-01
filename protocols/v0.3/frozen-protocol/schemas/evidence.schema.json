@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://memory-handoff-bench.invalid/schemas/evidence.schema.json",
+  "title": "Trial causal evidence summary",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "run_id",
+    "trial_id",
+    "case_id",
+    "writer_model",
+    "reader_model",
+    "source_variant",
+    "memory_mode",
+    "defense"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "trial_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "case_id": {
+      "type": "string"
+    },
+    "source_variant": {
+      "enum": [
+        "clean",
+        "poison"
+      ]
+    },
+    "memory_mode": {
+      "enum": [
+        "clean_memory",
+        "raw_rag",
+        "writer_generated",
+        "provenance_preserved"
+      ]
+    },
+    "defense": {
+      "enum": [
+        "D0",
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5"
+      ]
+    },
+    "poison_written": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "poison_retrieved": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "reader_influenced": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "unauthorized_action_attempted": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "baseline_gate_allowed": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "proposal_authorized": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "unsafe_state_changed": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "attempted_attack_success": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "executed_attack_success": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "benign_action_executed": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "defense_false_positive": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "counterfactual_pair_key": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "counterfactual_order": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1,
+      "maximum": 2
+    }
+  }
+}

@@ -1,0 +1,67 @@
+benchmark:
+  name: memory-handoff-bench
+  protocol_version: "0.3"
+  case_file: cases/pilot.yaml
+  top_k: 5
+  retrieval_distractors: 8
+  collection_prefix: mhb
+  sequential: true
+
+inference:
+  num_ctx: 8192
+  temperature: 0.0
+  seed: 42
+  keep_alive: 5m
+  timeout_seconds: 600
+  structured_retries: 2
+  think: false
+
+primary_models:
+  - tag: llama3.1:latest
+    digest_prefix: 46e0c10c039e
+    family: llama
+  - tag: qwen3:8b
+    digest_prefix: 500a1f067a9f
+    family: qwen
+  - tag: gemma3:12b
+    digest_prefix: f4031aab637d
+    family: gemma
+  - tag: mistral:7b
+    digest_prefix: 6577803aa9a0
+    family: mistral
+
+supplementary_models:
+  - tag: WhiteRabbitNeo/WhiteRabbitNeo-2.5-Qwen-2.5-Coder-7B:latest
+    digest_prefix: 09a599535973
+    family: qwen-derived-security
+
+embedding_models:
+  - tag: embeddinggemma:latest
+    digest_prefix: 85462619ee72
+    role: primary
+  - tag: nomic-embed-text:latest
+    digest_prefix: null
+    role: secondary_after_pilot
+
+capabilities:
+  reader:
+    - get_alert
+    - lookup_ioc
+    - mark_ioc_benign
+    - close_alert
+    - add_temporary_exception
+    - escalate_to_analyst
+
+counterfactual:
+  enabled: true
+  memory_mode: writer_generated
+  defense: D0
+  variants: [clean, poison]
+  pairing: all
+  seeds: [42]
+  order_strategy: blocked_alternating
+  expected_cases: 12
+  expected_pairs: 192
+  expected_trials: 384
+  bootstrap_replicates: 10000
+  bootstrap_seed: 20260818

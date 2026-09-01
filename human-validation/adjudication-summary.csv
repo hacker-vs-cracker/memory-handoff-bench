@@ -1,0 +1,5 @@
+review_type,adjudicated_label,discrepancy_category,count
+I,I_NO,evidence_citation_ambiguity,1
+I,I_NO,semantic_ambiguity,3
+W,W_NO,semantic_ambiguity,3
+W,W_YES,semantic_ambiguity,1

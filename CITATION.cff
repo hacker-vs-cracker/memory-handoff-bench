@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use Memory Handoff Bench, please cite this research artifact and the associated paper."
+title: "Memory Handoff Bench"
+type: software
+version: 1.0.1
+doi: "10.5281/zenodo.22139124"
+date-released: "2026-08-31"
+authors:
+  - family-names: "Arjun"
+    affiliation: "Independent Cybersecurity & GenAI Engineer"
+abstract: >-
+  A publication-safe benchmark and evidence package for matched measurement of
+  persistent memory poisoning across independently crossed LLM Writer and
+  Reader identities, with retrieval, proposal, authorization-gate, and state
+  consequences recorded separately.
+keywords:
+  - LLM agents
+  - persistent memory
+  - memory poisoning
+  - prompt injection
+  - authorization
+  - security benchmark
+repository-code: "https://github.com/hacker-vs-cracker/memory-handoff-bench"
+url: "https://github.com/hacker-vs-cracker/memory-handoff-bench"

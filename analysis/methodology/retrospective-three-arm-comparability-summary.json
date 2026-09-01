@@ -1,0 +1,25 @@
+{
+  "A_zero_provenance": 192,
+  "B_C_system_equal": 0,
+  "B_all_five_provenance": 192,
+  "B_has_d2_instruction": 0,
+  "C_all_five_provenance": 192,
+  "C_has_d2_instruction": 192,
+  "arms": {
+    "A": "Stage C writer_generated + D0",
+    "B": "Stage D provenance_preserved + D0",
+    "C": "Stage E full writer_generated + D2"
+  },
+  "counts_true": {
+    "B_C_prompt_parse_ok": 192,
+    "B_C_user_payload_equal_after_identifier_normalization": 192,
+    "memory_semantics_equal_ABC": 192,
+    "memory_vectors_equal_ABC": 192,
+    "query_equal_ABC": 192,
+    "retrieval_equal_ABC": 192,
+    "retrieval_vectors_equal_ABC": 192,
+    "writer_output_equal_ABC": 192
+  },
+  "interpretation": "If all semantic/retrieval fields and normalized B/C user payloads match, the realized historical data form a strong retrospective three-arm comparison: A vs B changes provenance visibility; B vs C changes the defense-specific system instruction while both display provenance. It is still not a prospectively registered reader-only ablation because the arms were separate runs with different trial-local identifiers and potential run-to-run model nondeterminism.",
+  "matched_triplets": 192
+}

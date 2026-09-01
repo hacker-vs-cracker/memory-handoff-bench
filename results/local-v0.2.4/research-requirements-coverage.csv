@@ -1,0 +1,13 @@
+requirement,status,evidence,boundary
+SOC alert-triage workflow,covered,12 synthetic future alerts with reversible mock-SIEM actions,No production SOC system or real IOC was touched
+Inbound email and ticket channels,covered in frozen fixtures,6 external_email cases and 6 external_ticket cases,Live IMAP/helpdesk connectors were not part of the registered benchmark
+At least four well-known LLM families,covered,"Llama, Qwen, Gemma, and Mistral used as writers and readers",WhiteRabbitNeo remained supplementary and was not run
+PostgreSQL and Qdrant evidence chain,covered,Immutable PostgreSQL run records plus encoder-isolated Qdrant collections,Service contents are not embedded in this portable ZIP
+Clean and poisoned sources,covered,Stages A/B/E-clean plus poison Stages B-G,Clean outcomes and poison attack estimands remain separate
+Memory representations,covered,"clean_memory, writer_generated, provenance_preserved, and raw_rag",Conditions are compared without pooling incompatible runs
+Defense conditions,covered,D0-D5 security tests plus D1-D5 clean utility control,D5 human-approved allow path was not a registered matrix cell
+Independent encoder sensitivity,covered descriptively,EmbeddingGemma primary and Nomic Stage F subset,Model calls were regenerated; do not claim a pure causal encoder effect
+Same-model and cross-model handoff,covered,All 16 primary writer-reader directions in Stage C,Cross-model propagation exists but was not higher than same-model ASR
+Low-temperature stochastic sensitivity,covered,"Temperature 0.2, seeds 7/42/101, 288 registered cross-model cells",Supplementary v0.2.4 estimand; not pooled with v0.2.3
+Reversible consequence boundary,covered by design,"Only synthetic alert, IOC, and temporary-exception state can change",Registered runs remain immutable; do not roll them back after collection
+"Cloud models, live mailbox/helpdesk, and voice intake",not part of primary study,None,Treat as a separately registered external-validity phase if pursued

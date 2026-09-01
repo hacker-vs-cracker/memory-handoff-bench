@@ -1,0 +1,8 @@
+status=PASS_FINAL_READONLY_CLOSEOUT_COMPLETE
+run_id=3dcdf414-1252-481c-a082-9060b362ff90
+postgresql_transaction_read_only=on
+llm_calls=0
+aws_calls=0
+postgresql_writes=0
+qdrant_writes=0
+d4_clean_utility_status=SUPPORTED

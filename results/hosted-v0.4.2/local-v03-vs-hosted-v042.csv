@@ -1,0 +1,3 @@
+environment,complete_pairs,clean_unauthorized,poison_unauthorized,unauthorized_rd,clean_unsafe_state,poison_unsafe_state,unsafe_state_rd
+local_v0.3_D0,192,30,73,0.22395833333333334,8,34,0.13541666666666666
+hosted_v0.4.2_D0,188,8,84,0.40425531914893614,7,83,0.40425531914893614

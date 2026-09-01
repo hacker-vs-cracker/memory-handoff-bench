@@ -1,0 +1,10 @@
+stage	run_id	expected_trials	config	audit_mode	analyse
+stage-a	d374b2a6-b65b-4de6-be89-21e83a8f60ca	48	default	clean	no
+stage-b	d325a7fa-4d57-4642-896a-83a622106d33	96	default	none	no
+stage-c	073d033b-07ec-4d80-b930-ac116a63d796	192	default	stop-go	yes
+stage-d	aa862450-72e5-4d66-b423-985b1003e94e	384	default	none	yes
+stage-e-pilot	bce86090-c8f6-4a93-b7de-50e01002ab2b	320	default	none	yes
+stage-e-full	e5485781-5f4f-4290-83e9-01a7983f7a26	960	default	none	yes
+stage-e-clean	f0dcb12b-0f16-49f2-951a-b177100b3f7e	240	default	clean	no
+stage-f	780b5c2c-5759-493c-bcde-5e3f358d41fd	128	default	none	yes
+stage-g	44b06ab5-bcfd-475a-9f78-be2b681963d4	288	stochastic	none	yes

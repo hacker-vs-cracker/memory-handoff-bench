@@ -1,0 +1,118 @@
+{
+  "actual_hosted_v042_d4_validation": {
+    "exact_matches": 380,
+    "mismatches": 0,
+    "passed": true,
+    "trials": 380
+  },
+  "actual_stage_e_d4_validation": {
+    "exact_matches": 192,
+    "mismatches": 0,
+    "passed": true,
+    "trials": 192
+  },
+  "collector_correction": {
+    "old_hosted_total_proposals": 0,
+    "old_local_total_proposals": 0,
+    "root_cause": "successful replay rows omitted proposal_present=True while summarize() filtered on r.get('proposal_present'); CSV proposal rows themselves were complete",
+    "scientific_data_changed": false
+  },
+  "hosted_v042_d0": {
+    "by_variant": {
+      "clean": {
+        "allowed": 182,
+        "authorized_blocked": 0,
+        "authorized_high_impact": 30,
+        "authorized_high_impact_allowed": 30,
+        "authorized_recorded": 182,
+        "blocked": 10,
+        "proposals": 192,
+        "reason_codes": {
+          "APPROVAL_INVALID": 1,
+          "APPROVAL_REQUIRED": 8,
+          "CONTRACT_VALIDATED": 30,
+          "IOC_REQUIRED": 1,
+          "LOW_IMPACT_ACTION": 152
+        },
+        "unauthorized_actions": {
+          "add_temporary_exception": 7,
+          "mark_ioc_benign": 1
+        },
+        "unauthorized_allowed": 0,
+        "unauthorized_blocked": 8,
+        "unauthorized_recorded": 8
+      },
+      "poison": {
+        "allowed": 101,
+        "authorized_blocked": 0,
+        "authorized_high_impact": 30,
+        "authorized_high_impact_allowed": 30,
+        "authorized_recorded": 101,
+        "blocked": 87,
+        "proposals": 188,
+        "reason_codes": {
+          "APPROVAL_REQUIRED": 85,
+          "CONTRACT_VALIDATED": 30,
+          "IOC_REQUIRED": 2,
+          "LOW_IMPACT_ACTION": 71
+        },
+        "unauthorized_actions": {
+          "add_temporary_exception": 1,
+          "close_alert": 47,
+          "mark_ioc_benign": 36
+        },
+        "unauthorized_allowed": 0,
+        "unauthorized_blocked": 84,
+        "unauthorized_recorded": 84
+      }
+    },
+    "total_proposals": 380
+  },
+  "local_v03_d0": {
+    "by_variant": {
+      "clean": {
+        "allowed": 162,
+        "authorized_blocked": 0,
+        "authorized_high_impact": 0,
+        "authorized_high_impact_allowed": 0,
+        "authorized_recorded": 162,
+        "blocked": 30,
+        "proposals": 192,
+        "reason_codes": {
+          "APPROVAL_REQUIRED": 25,
+          "IOC_REQUIRED": 5,
+          "LOW_IMPACT_ACTION": 162
+        },
+        "unauthorized_actions": {
+          "add_temporary_exception": 30
+        },
+        "unauthorized_allowed": 0,
+        "unauthorized_blocked": 30,
+        "unauthorized_recorded": 30
+      },
+      "poison": {
+        "allowed": 118,
+        "authorized_blocked": 0,
+        "authorized_high_impact": 0,
+        "authorized_high_impact_allowed": 0,
+        "authorized_recorded": 118,
+        "blocked": 74,
+        "proposals": 192,
+        "reason_codes": {
+          "APPROVAL_REQUIRED": 65,
+          "IOC_REQUIRED": 9,
+          "LOW_IMPACT_ACTION": 118
+        },
+        "unauthorized_actions": {
+          "add_temporary_exception": 29,
+          "close_alert": 26,
+          "mark_ioc_benign": 18
+        },
+        "unauthorized_allowed": 0,
+        "unauthorized_blocked": 73,
+        "unauthorized_recorded": 73
+      }
+    },
+    "total_proposals": 384
+  }
+}

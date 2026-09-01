@@ -1,0 +1,148 @@
+{
+  "embedding_manifest": {
+    "models": {
+      "embeddinggemma:latest": {
+        "capabilities": [
+          "embedding"
+        ],
+        "details": {
+          "context_length": 2048,
+          "embedding_length": 768,
+          "families": [
+            "gemma3"
+          ],
+          "family": "gemma3",
+          "format": "gguf",
+          "parameter_size": "307.58M",
+          "parent_model": "embeddinggemma:300m-bf16",
+          "quantization_level": "BF16"
+        },
+        "digest": "85462619ee721b466c5927d109d4cb765861907d5417b9109caebc4e614679f1",
+        "installed": true,
+        "modified_at": "2026-06-20T17:03:54.932355406+12:00",
+        "parameters": "num_batch                      2048\nnum_ctx                        2048",
+        "size": 621875917,
+        "template": "{{ .Prompt }}"
+      }
+    },
+    "ollama": {
+      "version": "0.30.7"
+    }
+  },
+  "embedding_model": "embeddinggemma:latest",
+  "embedding_provider": "Ollama local",
+  "endpoint": "bedrock-mantle",
+  "models": {
+    "embeddinggemma:latest": {
+      "capabilities": [
+        "embedding"
+      ],
+      "details": {
+        "context_length": 2048,
+        "embedding_length": 768,
+        "families": [
+          "gemma3"
+        ],
+        "family": "gemma3",
+        "format": "gguf",
+        "parameter_size": "307.58M",
+        "parent_model": "embeddinggemma:300m-bf16",
+        "quantization_level": "BF16"
+      },
+      "digest": "85462619ee721b466c5927d109d4cb765861907d5417b9109caebc4e614679f1",
+      "installed": true,
+      "modified_at": "2026-06-20T17:03:54.932355406+12:00",
+      "parameters": "num_batch                      2048\nnum_ctx                        2048",
+      "size": 621875917,
+      "template": "{{ .Prompt }}"
+    },
+    "google.gemma-3-12b-it": {
+      "catalog": {
+        "created": 1764460800,
+        "data_retention": {
+          "allowed_modes": [
+            "provider_data_share",
+            "none",
+            "default"
+          ],
+          "mode": "default",
+          "source": "model_default"
+        },
+        "id": "google.gemma-3-12b-it",
+        "object": "model",
+        "owned_by": "system",
+        "status": "available"
+      },
+      "digest": null,
+      "installed": true,
+      "provider_model_id": "google.gemma-3-12b-it"
+    },
+    "mistral.ministral-3-8b-instruct": {
+      "catalog": {
+        "created": 1763923750,
+        "data_retention": {
+          "allowed_modes": [
+            "none",
+            "provider_data_share",
+            "default"
+          ],
+          "mode": "default",
+          "source": "model_default"
+        },
+        "id": "mistral.ministral-3-8b-instruct",
+        "object": "model",
+        "owned_by": "system",
+        "status": "available"
+      },
+      "digest": null,
+      "installed": true,
+      "provider_model_id": "mistral.ministral-3-8b-instruct"
+    },
+    "openai.gpt-oss-20b": {
+      "catalog": {
+        "created": 1764460800,
+        "data_retention": {
+          "allowed_modes": [
+            "default",
+            "none",
+            "provider_data_share"
+          ],
+          "mode": "default",
+          "source": "model_default"
+        },
+        "id": "openai.gpt-oss-20b",
+        "object": "model",
+        "owned_by": "system",
+        "status": "available"
+      },
+      "digest": null,
+      "installed": true,
+      "provider_model_id": "openai.gpt-oss-20b"
+    },
+    "qwen.qwen3-32b": {
+      "catalog": {
+        "created": 1764460800,
+        "data_retention": {
+          "allowed_modes": [
+            "none",
+            "provider_data_share",
+            "default"
+          ],
+          "mode": "default",
+          "source": "model_default"
+        },
+        "id": "qwen.qwen3-32b",
+        "object": "model",
+        "owned_by": "system",
+        "status": "available"
+      },
+      "digest": null,
+      "installed": true,
+      "provider_model_id": "qwen.qwen3-32b"
+    }
+  },
+  "provider": "Amazon Bedrock",
+  "provider_seed_sent": false,
+  "provider_thinking_control_sent": false,
+  "region": "us-east-1"
+}

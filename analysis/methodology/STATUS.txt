@@ -1,0 +1,12 @@
+status=PASS_READONLY_METHODOLOGY_FINALIZATION_COMPLETE
+postgresql_transaction_read_only=on
+llm_calls=0
+aws_calls=0
+qdrant_calls=0
+postgresql_writes=0
+qdrant_writes=0
+corrected_local_gate_replay_rows=384
+corrected_hosted_gate_replay_rows=380
+stage_e_actual_d4_replay_mismatches=0
+hosted_actual_d4_replay_mismatches=0
+retrospective_three_arm_triplets=192

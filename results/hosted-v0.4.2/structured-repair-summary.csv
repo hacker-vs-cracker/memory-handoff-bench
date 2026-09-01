@@ -1,0 +1,9 @@
+role,model,fresh_valid_invocations,repaired_invocations,repair_passes,max_retries_observed
+reader,google.gemma-3-12b-it,190,0,0,0
+reader,mistral.ministral-3-8b-instruct,190,2,2,1
+reader,openai.gpt-oss-20b,190,8,9,2
+reader,qwen.qwen3-32b,190,1,1,1
+writer,google.gemma-3-12b-it,23,0,0,0
+writer,mistral.ministral-3-8b-instruct,24,0,0,0
+writer,openai.gpt-oss-20b,24,0,0,0
+writer,qwen.qwen3-32b,24,0,0,0

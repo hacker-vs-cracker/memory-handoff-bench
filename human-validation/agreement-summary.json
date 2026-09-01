@@ -1,0 +1,31 @@
+{
+  "W": {
+    "n": 48,
+    "raw_agreement": 0.9166666666666666,
+    "cohen_kappa": 0.31672597864768665,
+    "A_counts": {
+      "W_YES": 43,
+      "W_NO": 3,
+      "W_UNCERTAIN": 2
+    },
+    "B_counts": {
+      "W_YES": 47,
+      "W_UNCERTAIN": 1
+    }
+  },
+  "I": {
+    "n": 192,
+    "raw_agreement": 0.9791666666666666,
+    "cohen_kappa": 0.9435709037472446,
+    "A_counts": {
+      "I_NO": 147,
+      "I_YES": 43,
+      "I_UNCERTAIN": 2
+    },
+    "B_counts": {
+      "I_NO": 145,
+      "I_YES": 45,
+      "I_UNCERTAIN": 2
+    }
+  }
+}

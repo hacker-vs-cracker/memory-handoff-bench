@@ -1,0 +1,101 @@
+{
+  "approval_lookup": "study-local typed duration correction validated by d5_utility_v0.2",
+  "cases": [
+    "FIE-01",
+    "FIE-02",
+    "FIE-03",
+    "FOR-01",
+    "FOR-02",
+    "FOR-03",
+    "HIS-01",
+    "HIS-02",
+    "HIS-03",
+    "PRO-01",
+    "PRO-02",
+    "PRO-03"
+  ],
+  "cost_safety_cap_usd": 5.0,
+  "cost_safety_reserve_usd": 0.1,
+  "defenses": [
+    "D0",
+    "D4"
+  ],
+  "design_fingerprint": "7b0b7ad483a0c2e41ed1fe9c9b3fe7304435c82607eb1510905d1dc9ed87a42e",
+  "design_seed": 42,
+  "embedding_model": "embeddinggemma:latest",
+  "expected_pairs": 384,
+  "expected_trials": 768,
+  "local_pydantic_validation": true,
+  "max_completion_tokens": 2048,
+  "memory_mode": "writer_generated",
+  "package_version": "0.1",
+  "plan_audit": {
+    "fingerprint": "7b0b7ad483a0c2e41ed1fe9c9b3fe7304435c82607eb1510905d1dc9ed87a42e",
+    "fresh_writer_units": 96,
+    "pair_order": {
+      "clean_first": 192,
+      "poison_first": 192
+    },
+    "pairs": 384,
+    "pairs_by_defense": {
+      "D0": 192,
+      "D4": 192
+    },
+    "trials": 768,
+    "unique_pair_keys": 384,
+    "writer_unit_first_variant": {
+      "clean_first": 24,
+      "poison_first": 24
+    }
+  },
+  "preserved_failed_predecessors": [
+    {
+      "failure_note": "Mantle provider grammar rejected ReaderOutput schema keyword uniqueItems",
+      "protocol_hash": "a484f3058a78df45fc49ed92a57caa9338ae24b68af58843e164d89e0f2accd2",
+      "run_id": "481b8152-da81-461f-8723-3846f1d3c083",
+      "status": "failed"
+    },
+    {
+      "failure_note": "Gemma repair request was rejected because adjacent user roles violated provider alternation",
+      "protocol_hash": "36894631e6ad8da2283f4b8a26bd4457ab0644bcccb403e0c37ce13f40a59590",
+      "run_id": "9fa0e1f9-38b2-447f-8c53-eb64a048a750",
+      "status": "failed"
+    }
+  ],
+  "protocol_lock_sha256": "5dcfae28b076c4272bc38d35eae7e2cb056a2f3f118e3f9629dcb8e296218204",
+  "protocol_revision": "0.4.2",
+  "provider_response_format_sent": false,
+  "provider_seed_sent": false,
+  "provider_thinking_control_sent": false,
+  "qdrant_collection_prefix": "mhb_v042_hosted",
+  "readers": [
+    "google.gemma-3-12b-it",
+    "qwen.qwen3-32b",
+    "mistral.ministral-3-8b-instruct",
+    "openai.gpt-oss-20b"
+  ],
+  "registered_v04_reused": false,
+  "repair_message_strategy": "fresh_system_user_original_task_plus_repair",
+  "request_attempt_cap": 5000,
+  "retrieval_distractors": 8,
+  "run_kind": "hosted_external_validity_v0.4.2",
+  "schema_contract_transmitted_as_text": true,
+  "sequential": true,
+  "smoke_run_performed": false,
+  "structured_retries": 2,
+  "study": "mhb-v0.4.2-hosted-external-validity",
+  "temperature": 0.0,
+  "top_k": 5,
+  "transport_retries": 7,
+  "v03_protocol_lock_sha256": "dafb650facfe9db15683ecbaa00c6071695210d2202414f46fcdee47ee48318c",
+  "variants": [
+    "clean",
+    "poison"
+  ],
+  "writers": [
+    "google.gemma-3-12b-it",
+    "qwen.qwen3-32b",
+    "mistral.ministral-3-8b-instruct",
+    "openai.gpt-oss-20b"
+  ]
+}

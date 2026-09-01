@@ -1,0 +1,742 @@
+{
+  "backup": {
+    "actual_bytes": 783174278,
+    "actual_sha256": "57d5aac8e7454a7c9883cbcd88f44881658a39bf8304fd283bac7a1c7756be51",
+    "exists": true,
+    "expected_bytes": 783174278,
+    "expected_sha256": "57d5aac8e7454a7c9883cbcd88f44881658a39bf8304fd283bac7a1c7756be51",
+    "passed": true,
+    "path": "<LOCAL_RESEARCH_ROOT>/mhb-v042-hosted-evidence/registered-20260820-165627/memory_handoff_bench-pre-hosted-v042.dump"
+  },
+  "expected_run_reconciliation": {
+    "checks": {
+      "completed": true,
+      "failed_rows": true,
+      "failure_unit_case": true,
+      "failure_unit_variant": true,
+      "failure_unit_writer": true,
+      "memory_records": true,
+      "no_failed_status": true,
+      "protocol_hash": true,
+      "run_id": true,
+      "run_kind": true,
+      "run_status_completed": true,
+      "structured_output_failed": true,
+      "trials": true,
+      "unique_failure_unit": true
+    },
+    "passed": true
+  },
+  "local_source_evidence_archive": {
+    "actual_sha256": "268f65b7d8334a509d3a366e26d41ee2e065ef5646a7b7ac7cfe520ac322fc5c",
+    "available": true,
+    "expected_sha256": "268f65b7d8334a509d3a366e26d41ee2e065ef5646a7b7ac7cfe520ac322fc5c",
+    "path": "<LOCAL_RESEARCH_ROOT>/mhb-v042-hosted-evidence/mhb-v04.2-hosted-registered-v0.1-20260820-165627-UPLOAD.zip",
+    "sha256_match": true
+  },
+  "overall": {
+    "checks": {
+      "database_read_only": true,
+      "expected_run_facts": true,
+      "pre_v042_backup": true,
+      "qdrant_reconciliation": true,
+      "source_evidence_archive": true,
+      "target_pair_keys": true,
+      "v03_dependency_integrity": true,
+      "v042_package_integrity": true
+    },
+    "passed": true
+  },
+  "qdrant": {
+    "collection": {
+      "name": "mhb_v042_hosted_embeddinggemma_latest_85462619ee72_768",
+      "points_count": 7448,
+      "status": "green",
+      "vectors_count": null
+    },
+    "database_memory_records": 7448,
+    "expected_points": 7448,
+    "passed": true
+  },
+  "source_evidence_archive": {
+    "actual_sha256": "268f65b7d8334a509d3a366e26d41ee2e065ef5646a7b7ac7cfe520ac322fc5c",
+    "entries": 60,
+    "expected_entries": 60,
+    "expected_sha256": "268f65b7d8334a509d3a366e26d41ee2e065ef5646a7b7ac7cfe520ac322fc5c",
+    "files": [
+      {
+        "actual_sha256": "c9085bdcaa3c2a186922b10a957b1d2e829b33d7bfc2ca3cd9148a09f9d5d2d9",
+        "exists": true,
+        "expected_sha256": "c9085bdcaa3c2a186922b10a957b1d2e829b33d7bfc2ca3cd9148a09f9d5d2d9",
+        "match": true,
+        "path": "LOCAL-LARGE-ARTIFACTS.txt"
+      },
+      {
+        "actual_sha256": "0814a1be2e931e866a0456ce8961789e29833c7c04c23960cac6a60e74f1939b",
+        "exists": true,
+        "expected_sha256": "0814a1be2e931e866a0456ce8961789e29833c7c04c23960cac6a60e74f1939b",
+        "match": true,
+        "path": "RUN_STATUS.txt"
+      },
+      {
+        "actual_sha256": "30b0ced1b745a71ea01f20ac7885fdfc2128d1cfe16fcf41d53fa12d6125e546",
+        "exists": true,
+        "expected_sha256": "30b0ced1b745a71ea01f20ac7885fdfc2128d1cfe16fcf41d53fa12d6125e546",
+        "match": true,
+        "path": "disk-before.txt"
+      },
+      {
+        "actual_sha256": "e635d5e10b9ac0501bd042b061eb9fccde82eeb078e64ca7f300d143ca706f56",
+        "exists": true,
+        "expected_sha256": "e635d5e10b9ac0501bd042b061eb9fccde82eeb078e64ca7f300d143ca706f56",
+        "match": true,
+        "path": "frozen-package/BUILD_VALIDATION.md"
+      },
+      {
+        "actual_sha256": "2223db53bd82b4981b7c2bcc3c105d014f5e8ee4273e70a37b1f80a786bfb9ca",
+        "exists": true,
+        "expected_sha256": "2223db53bd82b4981b7c2bcc3c105d014f5e8ee4273e70a37b1f80a786bfb9ca",
+        "match": true,
+        "path": "frozen-package/PRE_RUN_COMPATIBILITY_BASIS.md"
+      },
+      {
+        "actual_sha256": "b7df307513c7ee6d14b2533cd71cdf24ec1ea3fafce97e47ec94575fd6bc5a41",
+        "exists": true,
+        "expected_sha256": "b7df307513c7ee6d14b2533cd71cdf24ec1ea3fafce97e47ec94575fd6bc5a41",
+        "match": true,
+        "path": "frozen-package/README.md"
+      },
+      {
+        "actual_sha256": "5dcfae28b076c4272bc38d35eae7e2cb056a2f3f118e3f9629dcb8e296218204",
+        "exists": true,
+        "expected_sha256": "5dcfae28b076c4272bc38d35eae7e2cb056a2f3f118e3f9629dcb8e296218204",
+        "match": true,
+        "path": "frozen-package/protocol_lock.json"
+      },
+      {
+        "actual_sha256": "d3968e5a4b1d0b1952734249ba9cde07bede2faa0ca61365db759b665ffabb20",
+        "exists": true,
+        "expected_sha256": "d3968e5a4b1d0b1952734249ba9cde07bede2faa0ca61365db759b665ffabb20",
+        "match": true,
+        "path": "frozen-package/recover-postrun.sh"
+      },
+      {
+        "actual_sha256": "eab8e37352b67dda791580223ccf387b21df41e1d4b08e5e5abc951bca352b21",
+        "exists": true,
+        "expected_sha256": "eab8e37352b67dda791580223ccf387b21df41e1d4b08e5e5abc951bca352b21",
+        "match": true,
+        "path": "frozen-package/research_protocol_v0.4.2-hosted.md"
+      },
+      {
+        "actual_sha256": "ca75bc2d1a9e4f43a755b9490fef959ee47e058841d825c89122dbe19a0a6b71",
+        "exists": true,
+        "expected_sha256": "ca75bc2d1a9e4f43a755b9490fef959ee47e058841d825c89122dbe19a0a6b71",
+        "match": true,
+        "path": "frozen-package/run-registered-and-collect.sh"
+      },
+      {
+        "actual_sha256": "5a71b5e38c3a327086f5fef411dcf47cdf359dbd005a661a6b916f2c81dce251",
+        "exists": true,
+        "expected_sha256": "5a71b5e38c3a327086f5fef411dcf47cdf359dbd005a661a6b916f2c81dce251",
+        "match": true,
+        "path": "frozen-package/spec/historical-stage-catalog.json"
+      },
+      {
+        "actual_sha256": "dcf0e0569d3e808f9e3b5c28e2a1d465500a1371449d9608d106ad0de2219ba9",
+        "exists": true,
+        "expected_sha256": "dcf0e0569d3e808f9e3b5c28e2a1d465500a1371449d9608d106ad0de2219ba9",
+        "match": true,
+        "path": "frozen-package/spec/hosted-v0.4.2.json"
+      },
+      {
+        "actual_sha256": "c1d7c0bfe2faa994b7fb7160126eb3151d1e37e187d886f585182e79b903e9ea",
+        "exists": true,
+        "expected_sha256": "c1d7c0bfe2faa994b7fb7160126eb3151d1e37e187d886f585182e79b903e9ea",
+        "match": true,
+        "path": "frozen-package/spec/pricing_snapshot.json"
+      },
+      {
+        "actual_sha256": "1fb1894dcd4f7e350cec91a1a925f1106ddee96c5b1ebd5e20db00ca16bc0d94",
+        "exists": true,
+        "expected_sha256": "1fb1894dcd4f7e350cec91a1a925f1106ddee96c5b1ebd5e20db00ca16bc0d94",
+        "match": true,
+        "path": "frozen-package/spec/v03-dependency-hashes.json"
+      },
+      {
+        "actual_sha256": "f713e531de86249a14f2bda595abe4d1ab22c94eeb4fac10ac496d69bbeec681",
+        "exists": true,
+        "expected_sha256": "f713e531de86249a14f2bda595abe4d1ab22c94eeb4fac10ac496d69bbeec681",
+        "match": true,
+        "path": "frozen-package/src/common.py"
+      },
+      {
+        "actual_sha256": "31c5807938c01f589435e61256c95c7d8b3808ed8f0d69fab28dc49d27a204d1",
+        "exists": true,
+        "expected_sha256": "31c5807938c01f589435e61256c95c7d8b3808ed8f0d69fab28dc49d27a204d1",
+        "match": true,
+        "path": "frozen-package/src/hosted_db.py"
+      },
+      {
+        "actual_sha256": "dcb4a0749e7941785d671c1ea4b1a36ec553965efffb6c103580deb8b67edfdc",
+        "exists": true,
+        "expected_sha256": "dcb4a0749e7941785d671c1ea4b1a36ec553965efffb6c103580deb8b67edfdc",
+        "match": true,
+        "path": "frozen-package/src/mantle_client.py"
+      },
+      {
+        "actual_sha256": "18f27d426982b74e8960f0d7ad9a9dff1e9f46f76ad55a33ebaaffb322403620",
+        "exists": true,
+        "expected_sha256": "18f27d426982b74e8960f0d7ad9a9dff1e9f46f76ad55a33ebaaffb322403620",
+        "match": true,
+        "path": "frozen-package/src/plan.py"
+      },
+      {
+        "actual_sha256": "9d5de8b41c2dd78bb63b31d76016286c97e28c7ed43660bf62cd21a1f3b15fd4",
+        "exists": true,
+        "expected_sha256": "9d5de8b41c2dd78bb63b31d76016286c97e28c7ed43660bf62cd21a1f3b15fd4",
+        "match": true,
+        "path": "frozen-package/src/postprocess.py"
+      },
+      {
+        "actual_sha256": "ec6a82220c1e60b5b44a879ff73497412055c9fc90d4f72dd5fc8db100d7f16a",
+        "exists": true,
+        "expected_sha256": "ec6a82220c1e60b5b44a879ff73497412055c9fc90d4f72dd5fc8db100d7f16a",
+        "match": true,
+        "path": "frozen-package/src/pre_run_checks.py"
+      },
+      {
+        "actual_sha256": "b72a75c7bc68cf1965bbc147b99db623b3580f4795f9126941fea1a9378fe500",
+        "exists": true,
+        "expected_sha256": "b72a75c7bc68cf1965bbc147b99db623b3580f4795f9126941fea1a9378fe500",
+        "match": true,
+        "path": "frozen-package/src/qdrant_snapshot.py"
+      },
+      {
+        "actual_sha256": "f65415164898e3f67635fd618d21669a9c5d13654c72bee2871bd7ceed86aa31",
+        "exists": true,
+        "expected_sha256": "f65415164898e3f67635fd618d21669a9c5d13654c72bee2871bd7ceed86aa31",
+        "match": true,
+        "path": "frozen-package/src/run_registered.py"
+      },
+      {
+        "actual_sha256": "a1459ef199cc3d5372d2adb107ac63206e466f85b05b73f3a2c704566efb890e",
+        "exists": true,
+        "expected_sha256": "a1459ef199cc3d5372d2adb107ac63206e466f85b05b73f3a2c704566efb890e",
+        "match": true,
+        "path": "frozen-package/src/secret_scan.py"
+      },
+      {
+        "actual_sha256": "3f206073459f7fdbdfa21295a91eecfe45d27eab4b3c18a83795c4a76e1f6f18",
+        "exists": true,
+        "expected_sha256": "3f206073459f7fdbdfa21295a91eecfe45d27eab4b3c18a83795c4a76e1f6f18",
+        "match": true,
+        "path": "frozen-package/src/verify_package.py"
+      },
+      {
+        "actual_sha256": "9d14d59a5023ef56bfabdc132af02ed1798557e5ccda87a4b76ac6e5e3ee124f",
+        "exists": true,
+        "expected_sha256": "9d14d59a5023ef56bfabdc132af02ed1798557e5ccda87a4b76ac6e5e3ee124f",
+        "match": true,
+        "path": "frozen-package/src/verify_v03_dependencies.py"
+      },
+      {
+        "actual_sha256": "e3ed68d95c2bae32639c3eef2e2d0719f5f03f3b48634fc27b7683068b8c9d2b",
+        "exists": true,
+        "expected_sha256": "e3ed68d95c2bae32639c3eef2e2d0719f5f03f3b48634fc27b7683068b8c9d2b",
+        "match": true,
+        "path": "frozen-package/tests/test_hosted_v042.py"
+      },
+      {
+        "actual_sha256": "0954a7606ccb295245ca2b2adecca236f04b319cc2c211eeb78c8cad83f315d3",
+        "exists": true,
+        "expected_sha256": "0954a7606ccb295245ca2b2adecca236f04b319cc2c211eeb78c8cad83f315d3",
+        "match": true,
+        "path": "frozen-package/tests/test_postprocess_offline.py"
+      },
+      {
+        "actual_sha256": "e777df51a7d0e9be31902658d8597431180503b2a04d41c4ba4ecf2a0d347fe7",
+        "exists": true,
+        "expected_sha256": "e777df51a7d0e9be31902658d8597431180503b2a04d41c4ba4ecf2a0d347fe7",
+        "match": true,
+        "path": "heartbeat.txt"
+      },
+      {
+        "actual_sha256": "299eeef8c8bfe7efebbb0061afc5bb51de0a3f93c706071f8947a74b2f444dd3",
+        "exists": true,
+        "expected_sha256": "299eeef8c8bfe7efebbb0061afc5bb51de0a3f93c706071f8947a74b2f444dd3",
+        "match": true,
+        "path": "historical-A-to-G-hosted-cost-time-estimate.csv"
+      },
+      {
+        "actual_sha256": "b4dc810a1d05fa085ef8f375dda198ef39bc00a0ce42c5d73de06b43b300a984",
+        "exists": true,
+        "expected_sha256": "b4dc810a1d05fa085ef8f375dda198ef39bc00a0ce42c5d73de06b43b300a984",
+        "match": true,
+        "path": "historical-A-to-G-hosted-cost-time-estimate.json"
+      },
+      {
+        "actual_sha256": "ecda1fc5898cdee3df7f1079132c621abe8aae5cb505b96e67ac4bb7f7b76e96",
+        "exists": true,
+        "expected_sha256": "ecda1fc5898cdee3df7f1079132c621abe8aae5cb505b96e67ac4bb7f7b76e96",
+        "match": true,
+        "path": "hosted-v042-analysis.json"
+      },
+      {
+        "actual_sha256": "88c1749631c7f7233a6b1cdb0c8810ade353242ffc3fa50ca4441d8773b9b9a3",
+        "exists": true,
+        "expected_sha256": "88c1749631c7f7233a6b1cdb0c8810ade353242ffc3fa50ca4441d8773b9b9a3",
+        "match": true,
+        "path": "mantle-selected-model-catalog.json"
+      },
+      {
+        "actual_sha256": "2b67ad575ecb5301475d5be1983f1e44cc2bb1c85c29a697d0c821934056b365",
+        "exists": true,
+        "expected_sha256": "2b67ad575ecb5301475d5be1983f1e44cc2bb1c85c29a697d0c821934056b365",
+        "match": true,
+        "path": "mantle-telemetry.ndjson"
+      },
+      {
+        "actual_sha256": "1158b3855ddd3df6beaa1652aba344fa4fe46a1d0f3a0cb290e09641bd25ab24",
+        "exists": true,
+        "expected_sha256": "1158b3855ddd3df6beaa1652aba344fa4fe46a1d0f3a0cb290e09641bd25ab24",
+        "match": true,
+        "path": "offline-tests.txt"
+      },
+      {
+        "actual_sha256": "938fb74e5f8212664876081fa93d7f24da8d231c1b844e9769d1dd9468546541",
+        "exists": true,
+        "expected_sha256": "938fb74e5f8212664876081fa93d7f24da8d231c1b844e9769d1dd9468546541",
+        "match": true,
+        "path": "package-lock-verification.txt"
+      },
+      {
+        "actual_sha256": "7df10fae5ccced39c0959dc58a9b4d102129cd679563eea7e884522873efd1f9",
+        "exists": true,
+        "expected_sha256": "7df10fae5ccced39c0959dc58a9b4d102129cd679563eea7e884522873efd1f9",
+        "match": true,
+        "path": "paper-ready-hosted-addendum.md"
+      },
+      {
+        "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "exists": true,
+        "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "match": true,
+        "path": "pg-dump-terminal.txt"
+      },
+      {
+        "actual_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "exists": true,
+        "expected_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "match": true,
+        "path": "postprocess-exit-code.txt"
+      },
+      {
+        "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "exists": true,
+        "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "match": true,
+        "path": "postprocess-terminal.txt"
+      },
+      {
+        "actual_sha256": "9589ecfbba00a79f30b2ab0fb9304241839eb67d713c74065d28a9c169e9b56f",
+        "exists": true,
+        "expected_sha256": "9589ecfbba00a79f30b2ab0fb9304241839eb67d713c74065d28a9c169e9b56f",
+        "match": true,
+        "path": "power-before.txt"
+      },
+      {
+        "actual_sha256": "650c88d5fc567b6d4234d7edd14ea9bb9997ebbf29649e97a9d08af1cdcd6342",
+        "exists": true,
+        "expected_sha256": "650c88d5fc567b6d4234d7edd14ea9bb9997ebbf29649e97a9d08af1cdcd6342",
+        "match": true,
+        "path": "pre-run-checks-terminal.txt"
+      },
+      {
+        "actual_sha256": "fad763f74d91978bf7d6a96a11886f84d1b65899ed2035ded94e7848fd8c9e26",
+        "exists": true,
+        "expected_sha256": "fad763f74d91978bf7d6a96a11886f84d1b65899ed2035ded94e7848fd8c9e26",
+        "match": true,
+        "path": "pre-run-checks.json"
+      },
+      {
+        "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "exists": true,
+        "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "match": true,
+        "path": "qdrant-after-terminal.txt"
+      },
+      {
+        "actual_sha256": "e7728ac6237785307438a60e19bd435b7e918a94c64a9a8d3b3f72fa2e2f862a",
+        "exists": true,
+        "expected_sha256": "e7728ac6237785307438a60e19bd435b7e918a94c64a9a8d3b3f72fa2e2f862a",
+        "match": true,
+        "path": "qdrant-after.json"
+      },
+      {
+        "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "exists": true,
+        "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "match": true,
+        "path": "qdrant-before-terminal.txt"
+      },
+      {
+        "actual_sha256": "7e24c231cf44e6a129206ca4fc066713fff5fdd7da47583010d8d31bbf1f8ecf",
+        "exists": true,
+        "expected_sha256": "7e24c231cf44e6a129206ca4fc066713fff5fdd7da47583010d8d31bbf1f8ecf",
+        "match": true,
+        "path": "qdrant-before.json"
+      },
+      {
+        "actual_sha256": "9468b9399c489d4768e92b5573b694ce9483a4917e7bdc788f121e4eaed85b8f",
+        "exists": true,
+        "expected_sha256": "9468b9399c489d4768e92b5573b694ce9483a4917e7bdc788f121e4eaed85b8f",
+        "match": true,
+        "path": "registered-config-snapshot.json"
+      },
+      {
+        "actual_sha256": "755fccd31261db38dd88bc73f5ad4f9fda93cbddfcd7f053eec14194c87a9108",
+        "exists": true,
+        "expected_sha256": "755fccd31261db38dd88bc73f5ad4f9fda93cbddfcd7f053eec14194c87a9108",
+        "match": true,
+        "path": "registered-confirmation.txt"
+      },
+      {
+        "actual_sha256": "4c830e6957e75c84c2053935975ba2f94c00c6d1384e3a7e5cfe168c0c4f7925",
+        "exists": true,
+        "expected_sha256": "4c830e6957e75c84c2053935975ba2f94c00c6d1384e3a7e5cfe168c0c4f7925",
+        "match": true,
+        "path": "registered-model-manifest.json"
+      },
+      {
+        "actual_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "exists": true,
+        "expected_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "match": true,
+        "path": "registered-run-exit-code.txt"
+      },
+      {
+        "actual_sha256": "2b3414bc02e21abdadf13f2d40c237d2677209ea4b8eda3db12ea6142790f63a",
+        "exists": true,
+        "expected_sha256": "2b3414bc02e21abdadf13f2d40c237d2677209ea4b8eda3db12ea6142790f63a",
+        "match": true,
+        "path": "registered-run-id.txt"
+      },
+      {
+        "actual_sha256": "0b3b812552c5fae4f56cee8f7b29ae6b6432ba072bba2a64ce0276c0bcd403b8",
+        "exists": true,
+        "expected_sha256": "0b3b812552c5fae4f56cee8f7b29ae6b6432ba072bba2a64ce0276c0bcd403b8",
+        "match": true,
+        "path": "registered-run-summary.json"
+      },
+      {
+        "actual_sha256": "b3302cbe1d3b2db97499e975981df48b1660f1db9dd0c41dde5f0f8569890b64",
+        "exists": true,
+        "expected_sha256": "b3302cbe1d3b2db97499e975981df48b1660f1db9dd0c41dde5f0f8569890b64",
+        "match": true,
+        "path": "registered-terminal.txt"
+      },
+      {
+        "actual_sha256": "4106dfa9b9c42346e55f9ce15093e85c2cc025a9cef9bb4d85a67043ea658c76",
+        "exists": true,
+        "expected_sha256": "4106dfa9b9c42346e55f9ce15093e85c2cc025a9cef9bb4d85a67043ea658c76",
+        "match": true,
+        "path": "run-db-status.json"
+      },
+      {
+        "actual_sha256": "824a06ced125a0239577af79960d0d1c0f9cf62a28a8aa5bf481b5b2000680be",
+        "exists": true,
+        "expected_sha256": "824a06ced125a0239577af79960d0d1c0f9cf62a28a8aa5bf481b5b2000680be",
+        "match": true,
+        "path": "secret-scan.txt"
+      },
+      {
+        "actual_sha256": "b44e81675d2feaf9856bf122ead44132ded29607680c944d4b594d6a2b17db39",
+        "exists": true,
+        "expected_sha256": "b44e81675d2feaf9856bf122ead44132ded29607680c944d4b594d6a2b17db39",
+        "match": true,
+        "path": "v03-dependencies-after.json"
+      },
+      {
+        "actual_sha256": "c26de83abdc9496cd1301470918ec39ecca1cf389ef0ae1c6504da1800d1c431",
+        "exists": true,
+        "expected_sha256": "c26de83abdc9496cd1301470918ec39ecca1cf389ef0ae1c6504da1800d1c431",
+        "match": true,
+        "path": "v03-dependencies-after.txt"
+      },
+      {
+        "actual_sha256": "b44e81675d2feaf9856bf122ead44132ded29607680c944d4b594d6a2b17db39",
+        "exists": true,
+        "expected_sha256": "b44e81675d2feaf9856bf122ead44132ded29607680c944d4b594d6a2b17db39",
+        "match": true,
+        "path": "v03-dependencies-before.json"
+      },
+      {
+        "actual_sha256": "c26de83abdc9496cd1301470918ec39ecca1cf389ef0ae1c6504da1800d1c431",
+        "exists": true,
+        "expected_sha256": "c26de83abdc9496cd1301470918ec39ecca1cf389ef0ae1c6504da1800d1c431",
+        "match": true,
+        "path": "v03-dependencies-before.txt"
+      },
+      {
+        "actual_sha256": "9390c18b57ec0815d28ce06b2929270daa11095922c05d2597581fc0b2f76989",
+        "exists": true,
+        "expected_sha256": "9390c18b57ec0815d28ce06b2929270daa11095922c05d2597581fc0b2f76989",
+        "match": true,
+        "path": "wrapper.log"
+      }
+    ],
+    "manifest_passed": true,
+    "manifest_present": true,
+    "passed": true,
+    "path": "<LOCAL_RESEARCH_ROOT>/mhb-v04.2-final-closeout-v0.2/reference/source-v042-registered-evidence-UPLOAD.zip",
+    "sha256_match": true,
+    "zip_crc_passed": true
+  },
+  "v03_dependency_integrity": {
+    "files": [
+      {
+        "actual_sha256": "dafb650facfe9db15683ecbaa00c6071695210d2202414f46fcdee47ee48318c",
+        "exists": true,
+        "expected_sha256": "dafb650facfe9db15683ecbaa00c6071695210d2202414f46fcdee47ee48318c",
+        "match": true,
+        "path": "protocol_lock.json"
+      },
+      {
+        "actual_sha256": "7d5219f15e621764ee183f155318e879f88f54e68ecdb6afd506872f536219c6",
+        "exists": true,
+        "expected_sha256": "7d5219f15e621764ee183f155318e879f88f54e68ecdb6afd506872f536219c6",
+        "match": true,
+        "path": "cases/pilot.yaml"
+      },
+      {
+        "actual_sha256": "abbcb233ea9397c8b1a2e47cce76b9643a0c27d8790fccc7f27a22a3659f8a06",
+        "exists": true,
+        "expected_sha256": "abbcb233ea9397c8b1a2e47cce76b9643a0c27d8790fccc7f27a22a3659f8a06",
+        "match": true,
+        "path": "src/memory_handoff_bench/experiment.py"
+      },
+      {
+        "actual_sha256": "d156aca9806d031c891d71384760aeb81acc2fe4c5a405b38666df27aa19f249",
+        "exists": true,
+        "expected_sha256": "d156aca9806d031c891d71384760aeb81acc2fe4c5a405b38666df27aa19f249",
+        "match": true,
+        "path": "src/memory_handoff_bench/prompts.py"
+      },
+      {
+        "actual_sha256": "77ec1fc1383956cf146105aa3ae5445309e6447a4cde755268a05a37f39ac306",
+        "exists": true,
+        "expected_sha256": "77ec1fc1383956cf146105aa3ae5445309e6447a4cde755268a05a37f39ac306",
+        "match": true,
+        "path": "src/memory_handoff_bench/domain.py"
+      },
+      {
+        "actual_sha256": "68e137cd9b3b07018978631d1df546526b4e0830a01990fae95b2415534dfbb3",
+        "exists": true,
+        "expected_sha256": "68e137cd9b3b07018978631d1df546526b4e0830a01990fae95b2415534dfbb3",
+        "match": true,
+        "path": "src/memory_handoff_bench/gate.py"
+      },
+      {
+        "actual_sha256": "27d10e19134725ae1b8357e87625f13f2722a9ba88e79306a978cf8230a136a4",
+        "exists": true,
+        "expected_sha256": "27d10e19134725ae1b8357e87625f13f2722a9ba88e79306a978cf8230a136a4",
+        "match": true,
+        "path": "src/memory_handoff_bench/storage.py"
+      },
+      {
+        "actual_sha256": "63aa7708e8ac75da10f86a367d4110617240e63e90b51cfcfd519f1a9504ba26",
+        "exists": true,
+        "expected_sha256": "63aa7708e8ac75da10f86a367d4110617240e63e90b51cfcfd519f1a9504ba26",
+        "match": true,
+        "path": "src/memory_handoff_bench/metrics.py"
+      },
+      {
+        "actual_sha256": "05054eb36fd3cccac8cdda1258a97abea8b79aefba299862b0ec63750d337296",
+        "exists": true,
+        "expected_sha256": "05054eb36fd3cccac8cdda1258a97abea8b79aefba299862b0ec63750d337296",
+        "match": true,
+        "path": "src/memory_handoff_bench/vector_store.py"
+      },
+      {
+        "actual_sha256": "a6a200a37efcedeb9c387a5efb30db4e0860da7ad96deb1d58b13a90cf263848",
+        "exists": true,
+        "expected_sha256": "a6a200a37efcedeb9c387a5efb30db4e0860da7ad96deb1d58b13a90cf263848",
+        "match": true,
+        "path": "configs/counterfactual-v0.3.yaml"
+      }
+    ],
+    "passed": true
+  },
+  "v042_package_integrity": {
+    "expected_lock_sha256": "5dcfae28b076c4272bc38d35eae7e2cb056a2f3f118e3f9629dcb8e296218204",
+    "lock_sha256": "5dcfae28b076c4272bc38d35eae7e2cb056a2f3f118e3f9629dcb8e296218204",
+    "lock_sha_match": true,
+    "locked_files": {
+      "files": [
+        {
+          "actual_sha256": "e635d5e10b9ac0501bd042b061eb9fccde82eeb078e64ca7f300d143ca706f56",
+          "exists": true,
+          "expected_sha256": "e635d5e10b9ac0501bd042b061eb9fccde82eeb078e64ca7f300d143ca706f56",
+          "match": true,
+          "path": "BUILD_VALIDATION.md"
+        },
+        {
+          "actual_sha256": "2223db53bd82b4981b7c2bcc3c105d014f5e8ee4273e70a37b1f80a786bfb9ca",
+          "exists": true,
+          "expected_sha256": "2223db53bd82b4981b7c2bcc3c105d014f5e8ee4273e70a37b1f80a786bfb9ca",
+          "match": true,
+          "path": "PRE_RUN_COMPATIBILITY_BASIS.md"
+        },
+        {
+          "actual_sha256": "b7df307513c7ee6d14b2533cd71cdf24ec1ea3fafce97e47ec94575fd6bc5a41",
+          "exists": true,
+          "expected_sha256": "b7df307513c7ee6d14b2533cd71cdf24ec1ea3fafce97e47ec94575fd6bc5a41",
+          "match": true,
+          "path": "README.md"
+        },
+        {
+          "actual_sha256": "d3968e5a4b1d0b1952734249ba9cde07bede2faa0ca61365db759b665ffabb20",
+          "exists": true,
+          "expected_sha256": "d3968e5a4b1d0b1952734249ba9cde07bede2faa0ca61365db759b665ffabb20",
+          "match": true,
+          "path": "recover-postrun.sh"
+        },
+        {
+          "actual_sha256": "eab8e37352b67dda791580223ccf387b21df41e1d4b08e5e5abc951bca352b21",
+          "exists": true,
+          "expected_sha256": "eab8e37352b67dda791580223ccf387b21df41e1d4b08e5e5abc951bca352b21",
+          "match": true,
+          "path": "research_protocol_v0.4.2-hosted.md"
+        },
+        {
+          "actual_sha256": "ca75bc2d1a9e4f43a755b9490fef959ee47e058841d825c89122dbe19a0a6b71",
+          "exists": true,
+          "expected_sha256": "ca75bc2d1a9e4f43a755b9490fef959ee47e058841d825c89122dbe19a0a6b71",
+          "match": true,
+          "path": "run-registered-and-collect.sh"
+        },
+        {
+          "actual_sha256": "5a71b5e38c3a327086f5fef411dcf47cdf359dbd005a661a6b916f2c81dce251",
+          "exists": true,
+          "expected_sha256": "5a71b5e38c3a327086f5fef411dcf47cdf359dbd005a661a6b916f2c81dce251",
+          "match": true,
+          "path": "spec/historical-stage-catalog.json"
+        },
+        {
+          "actual_sha256": "dcf0e0569d3e808f9e3b5c28e2a1d465500a1371449d9608d106ad0de2219ba9",
+          "exists": true,
+          "expected_sha256": "dcf0e0569d3e808f9e3b5c28e2a1d465500a1371449d9608d106ad0de2219ba9",
+          "match": true,
+          "path": "spec/hosted-v0.4.2.json"
+        },
+        {
+          "actual_sha256": "c1d7c0bfe2faa994b7fb7160126eb3151d1e37e187d886f585182e79b903e9ea",
+          "exists": true,
+          "expected_sha256": "c1d7c0bfe2faa994b7fb7160126eb3151d1e37e187d886f585182e79b903e9ea",
+          "match": true,
+          "path": "spec/pricing_snapshot.json"
+        },
+        {
+          "actual_sha256": "1fb1894dcd4f7e350cec91a1a925f1106ddee96c5b1ebd5e20db00ca16bc0d94",
+          "exists": true,
+          "expected_sha256": "1fb1894dcd4f7e350cec91a1a925f1106ddee96c5b1ebd5e20db00ca16bc0d94",
+          "match": true,
+          "path": "spec/v03-dependency-hashes.json"
+        },
+        {
+          "actual_sha256": "f713e531de86249a14f2bda595abe4d1ab22c94eeb4fac10ac496d69bbeec681",
+          "exists": true,
+          "expected_sha256": "f713e531de86249a14f2bda595abe4d1ab22c94eeb4fac10ac496d69bbeec681",
+          "match": true,
+          "path": "src/common.py"
+        },
+        {
+          "actual_sha256": "31c5807938c01f589435e61256c95c7d8b3808ed8f0d69fab28dc49d27a204d1",
+          "exists": true,
+          "expected_sha256": "31c5807938c01f589435e61256c95c7d8b3808ed8f0d69fab28dc49d27a204d1",
+          "match": true,
+          "path": "src/hosted_db.py"
+        },
+        {
+          "actual_sha256": "dcb4a0749e7941785d671c1ea4b1a36ec553965efffb6c103580deb8b67edfdc",
+          "exists": true,
+          "expected_sha256": "dcb4a0749e7941785d671c1ea4b1a36ec553965efffb6c103580deb8b67edfdc",
+          "match": true,
+          "path": "src/mantle_client.py"
+        },
+        {
+          "actual_sha256": "18f27d426982b74e8960f0d7ad9a9dff1e9f46f76ad55a33ebaaffb322403620",
+          "exists": true,
+          "expected_sha256": "18f27d426982b74e8960f0d7ad9a9dff1e9f46f76ad55a33ebaaffb322403620",
+          "match": true,
+          "path": "src/plan.py"
+        },
+        {
+          "actual_sha256": "9d5de8b41c2dd78bb63b31d76016286c97e28c7ed43660bf62cd21a1f3b15fd4",
+          "exists": true,
+          "expected_sha256": "9d5de8b41c2dd78bb63b31d76016286c97e28c7ed43660bf62cd21a1f3b15fd4",
+          "match": true,
+          "path": "src/postprocess.py"
+        },
+        {
+          "actual_sha256": "ec6a82220c1e60b5b44a879ff73497412055c9fc90d4f72dd5fc8db100d7f16a",
+          "exists": true,
+          "expected_sha256": "ec6a82220c1e60b5b44a879ff73497412055c9fc90d4f72dd5fc8db100d7f16a",
+          "match": true,
+          "path": "src/pre_run_checks.py"
+        },
+        {
+          "actual_sha256": "b72a75c7bc68cf1965bbc147b99db623b3580f4795f9126941fea1a9378fe500",
+          "exists": true,
+          "expected_sha256": "b72a75c7bc68cf1965bbc147b99db623b3580f4795f9126941fea1a9378fe500",
+          "match": true,
+          "path": "src/qdrant_snapshot.py"
+        },
+        {
+          "actual_sha256": "f65415164898e3f67635fd618d21669a9c5d13654c72bee2871bd7ceed86aa31",
+          "exists": true,
+          "expected_sha256": "f65415164898e3f67635fd618d21669a9c5d13654c72bee2871bd7ceed86aa31",
+          "match": true,
+          "path": "src/run_registered.py"
+        },
+        {
+          "actual_sha256": "a1459ef199cc3d5372d2adb107ac63206e466f85b05b73f3a2c704566efb890e",
+          "exists": true,
+          "expected_sha256": "a1459ef199cc3d5372d2adb107ac63206e466f85b05b73f3a2c704566efb890e",
+          "match": true,
+          "path": "src/secret_scan.py"
+        },
+        {
+          "actual_sha256": "3f206073459f7fdbdfa21295a91eecfe45d27eab4b3c18a83795c4a76e1f6f18",
+          "exists": true,
+          "expected_sha256": "3f206073459f7fdbdfa21295a91eecfe45d27eab4b3c18a83795c4a76e1f6f18",
+          "match": true,
+          "path": "src/verify_package.py"
+        },
+        {
+          "actual_sha256": "9d14d59a5023ef56bfabdc132af02ed1798557e5ccda87a4b76ac6e5e3ee124f",
+          "exists": true,
+          "expected_sha256": "9d14d59a5023ef56bfabdc132af02ed1798557e5ccda87a4b76ac6e5e3ee124f",
+          "match": true,
+          "path": "src/verify_v03_dependencies.py"
+        },
+        {
+          "actual_sha256": "e3ed68d95c2bae32639c3eef2e2d0719f5f03f3b48634fc27b7683068b8c9d2b",
+          "exists": true,
+          "expected_sha256": "e3ed68d95c2bae32639c3eef2e2d0719f5f03f3b48634fc27b7683068b8c9d2b",
+          "match": true,
+          "path": "tests/test_hosted_v042.py"
+        },
+        {
+          "actual_sha256": "0954a7606ccb295245ca2b2adecca236f04b319cc2c211eeb78c8cad83f315d3",
+          "exists": true,
+          "expected_sha256": "0954a7606ccb295245ca2b2adecca236f04b319cc2c211eeb78c8cad83f315d3",
+          "match": true,
+          "path": "tests/test_postprocess_offline.py"
+        }
+      ],
+      "passed": true
+    },
+    "passed": true
+  }
+}

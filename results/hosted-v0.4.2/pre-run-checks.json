@@ -1,0 +1,100 @@
+{
+  "billable_model_calls_made": 0,
+  "database_health": {
+    "db": "memory_handoff_bench",
+    "version": "PostgreSQL 18.3 (Homebrew) on aarch64-apple-darwin25.2.0, compiled by Apple clang version 17.0.0 (clang-1700.6.3.2), 64-bit"
+  },
+  "embedding_manifest": {
+    "models": {
+      "embeddinggemma:latest": {
+        "capabilities": [
+          "embedding"
+        ],
+        "details": {
+          "context_length": 2048,
+          "embedding_length": 768,
+          "families": [
+            "gemma3"
+          ],
+          "family": "gemma3",
+          "format": "gguf",
+          "parameter_size": "307.58M",
+          "parent_model": "embeddinggemma:300m-bf16",
+          "quantization_level": "BF16"
+        },
+        "digest": "85462619ee721b466c5927d109d4cb765861907d5417b9109caebc4e614679f1",
+        "installed": true,
+        "modified_at": "2026-06-20T17:03:54.932355406+12:00",
+        "parameters": "num_batch                      2048\nnum_ctx                        2048",
+        "size": 621875917,
+        "template": "{{ .Prompt }}"
+      }
+    },
+    "ollama": {
+      "version": "0.30.7"
+    }
+  },
+  "mantle_catalog_model_count": 55,
+  "migration_004_present": true,
+  "passed": true,
+  "plan": {
+    "fingerprint": "7b0b7ad483a0c2e41ed1fe9c9b3fe7304435c82607eb1510905d1dc9ed87a42e",
+    "fresh_writer_units": 96,
+    "pair_order": {
+      "clean_first": 192,
+      "poison_first": 192
+    },
+    "pairs": 384,
+    "pairs_by_defense": {
+      "D0": 192,
+      "D4": 192
+    },
+    "trials": 768,
+    "unique_pair_keys": 384,
+    "writer_unit_first_variant": {
+      "clean_first": 24,
+      "poison_first": 24
+    }
+  },
+  "preexisting_v042_collections": [],
+  "preserved_failed_predecessors": [
+    {
+      "failure_note": "Mantle provider grammar rejected ReaderOutput schema keyword uniqueItems",
+      "label": "hosted-external-validity-v0.4-registered-20260820-154555",
+      "protocol_hash": "a484f3058a78df45fc49ed92a57caa9338ae24b68af58843e164d89e0f2accd2",
+      "run_id": "481b8152-da81-461f-8723-3846f1d3c083",
+      "started_at": "2026-08-20 09:21:19.314050+05:30",
+      "status": "failed"
+    },
+    {
+      "failure_note": "Gemma repair request was rejected because adjacent user roles violated provider alternation",
+      "label": "hosted-external-validity-v0.4.1-registered-20260820-162309",
+      "protocol_hash": "36894631e6ad8da2283f4b8a26bd4457ab0644bcccb403e0c37ce13f40a59590",
+      "run_id": "9fa0e1f9-38b2-447f-8c53-eb64a048a750",
+      "started_at": "2026-08-20 09:54:51.089079+05:30",
+      "status": "failed"
+    }
+  ],
+  "preserved_failed_v041_collections": [
+    "mhb_v041_hosted_embeddinggemma_latest_85462619ee72_768"
+  ],
+  "preserved_failed_v04_collections": [
+    "mhb_v04_hosted_embeddinggemma_latest_85462619ee72_768"
+  ],
+  "prior_v042_runs": [],
+  "provider_response_format_preflight_call_made": false,
+  "qdrant_collection_count": 5,
+  "required_model_statuses": {
+    "google.gemma-3-12b-it": "available",
+    "mistral.ministral-3-8b-instruct": "available",
+    "openai.gpt-oss-20b": "available",
+    "qwen.qwen3-32b": "available"
+  },
+  "required_models_present": [
+    "google.gemma-3-12b-it",
+    "mistral.ministral-3-8b-instruct",
+    "openai.gpt-oss-20b",
+    "qwen.qwen3-32b"
+  ],
+  "v03_dependency_mismatches": {}
+}

@@ -1,0 +1,387 @@
+{
+  "$defs": {
+    "ActionName": {
+      "enum": [
+        "get_alert",
+        "lookup_ioc",
+        "mark_ioc_benign",
+        "close_alert",
+        "add_temporary_exception",
+        "escalate_to_analyst",
+        "no_action"
+      ],
+      "title": "ActionName",
+      "type": "string"
+    },
+    "AlertFixture": {
+      "additionalProperties": false,
+      "properties": {
+        "alert_id": {
+          "title": "Alert Id",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "analyst_request": {
+          "title": "Analyst Request",
+          "type": "string"
+        },
+        "ioc": {
+          "$ref": "#/$defs/IOCFixture"
+        },
+        "asset": {
+          "$ref": "#/$defs/AssetFixture"
+        },
+        "severity": {
+          "enum": [
+            "low",
+            "medium",
+            "high",
+            "critical"
+          ],
+          "title": "Severity",
+          "type": "string"
+        }
+      },
+      "required": [
+        "alert_id",
+        "title",
+        "analyst_request",
+        "ioc",
+        "asset",
+        "severity"
+      ],
+      "title": "AlertFixture",
+      "type": "object"
+    },
+    "ApprovalFixture": {
+      "additionalProperties": false,
+      "properties": {
+        "approval_id": {
+          "title": "Approval Id",
+          "type": "string"
+        },
+        "ioc_value": {
+          "title": "Ioc Value",
+          "type": "string"
+        },
+        "allowed_actions": {
+          "items": {
+            "$ref": "#/$defs/ActionName"
+          },
+          "title": "Allowed Actions",
+          "type": "array"
+        },
+        "max_duration_hours": {
+          "anyOf": [
+            {
+              "maximum": 168,
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Max Duration Hours"
+        },
+        "active": {
+          "default": true,
+          "title": "Active",
+          "type": "boolean"
+        },
+        "expires_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Expires At"
+        }
+      },
+      "required": [
+        "approval_id",
+        "ioc_value",
+        "allowed_actions"
+      ],
+      "title": "ApprovalFixture",
+      "type": "object"
+    },
+    "AssetFixture": {
+      "additionalProperties": false,
+      "properties": {
+        "asset_id": {
+          "title": "Asset Id",
+          "type": "string"
+        },
+        "hostname": {
+          "title": "Hostname",
+          "type": "string"
+        },
+        "criticality": {
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "title": "Criticality",
+          "type": "string"
+        }
+      },
+      "required": [
+        "asset_id",
+        "hostname",
+        "criticality"
+      ],
+      "title": "AssetFixture",
+      "type": "object"
+    },
+    "ExistingExceptionFixture": {
+      "additionalProperties": false,
+      "properties": {
+        "exception_id": {
+          "title": "Exception Id",
+          "type": "string"
+        },
+        "ioc_value": {
+          "title": "Ioc Value",
+          "type": "string"
+        },
+        "active": {
+          "default": true,
+          "title": "Active",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "exception_id",
+        "ioc_value"
+      ],
+      "title": "ExistingExceptionFixture",
+      "type": "object"
+    },
+    "ExpectedOutcome": {
+      "additionalProperties": false,
+      "properties": {
+        "clean_actions": {
+          "items": {
+            "$ref": "#/$defs/ActionName"
+          },
+          "title": "Clean Actions",
+          "type": "array"
+        },
+        "unsafe_actions": {
+          "items": {
+            "$ref": "#/$defs/ActionName"
+          },
+          "title": "Unsafe Actions",
+          "type": "array"
+        },
+        "poison_semantics": {
+          "$ref": "#/$defs/PoisonSemantics"
+        }
+      },
+      "required": [
+        "clean_actions",
+        "unsafe_actions",
+        "poison_semantics"
+      ],
+      "title": "ExpectedOutcome",
+      "type": "object"
+    },
+    "IOCFixture": {
+      "additionalProperties": false,
+      "properties": {
+        "ioc_id": {
+          "title": "Ioc Id",
+          "type": "string"
+        },
+        "type": {
+          "enum": [
+            "domain",
+            "ip",
+            "sha256"
+          ],
+          "title": "Type",
+          "type": "string"
+        },
+        "value": {
+          "title": "Value",
+          "type": "string"
+        },
+        "verdict": {
+          "default": "unknown",
+          "title": "Verdict",
+          "type": "string"
+        }
+      },
+      "required": [
+        "ioc_id",
+        "type",
+        "value"
+      ],
+      "title": "IOCFixture",
+      "type": "object"
+    },
+    "PilotCase": {
+      "additionalProperties": false,
+      "properties": {
+        "case_id": {
+          "title": "Case Id",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "category": {
+          "enum": [
+            "false_ioc_exception",
+            "forged_approval",
+            "fabricated_analyst_history",
+            "procedural_manipulation"
+          ],
+          "title": "Category",
+          "type": "string"
+        },
+        "attack_style": {
+          "enum": [
+            "embedded_indirect_instruction",
+            "false_authority_claim",
+            "conditional_procedural_memory"
+          ],
+          "title": "Attack Style",
+          "type": "string"
+        },
+        "source": {
+          "$ref": "#/$defs/SourcePair"
+        },
+        "future_alert": {
+          "$ref": "#/$defs/AlertFixture"
+        },
+        "trusted_fixtures": {
+          "$ref": "#/$defs/TrustedFixtures"
+        },
+        "expected": {
+          "$ref": "#/$defs/ExpectedOutcome"
+        }
+      },
+      "required": [
+        "case_id",
+        "title",
+        "category",
+        "attack_style",
+        "source",
+        "future_alert",
+        "expected"
+      ],
+      "title": "PilotCase",
+      "type": "object"
+    },
+    "PoisonSemantics": {
+      "additionalProperties": false,
+      "properties": {
+        "concept_groups": {
+          "items": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "minItems": 1,
+          "title": "Concept Groups",
+          "type": "array"
+        }
+      },
+      "required": [
+        "concept_groups"
+      ],
+      "title": "PoisonSemantics",
+      "type": "object"
+    },
+    "SourcePair": {
+      "additionalProperties": false,
+      "properties": {
+        "source_type": {
+          "enum": [
+            "external_email",
+            "external_ticket"
+          ],
+          "title": "Source Type",
+          "type": "string"
+        },
+        "external_id": {
+          "title": "External Id",
+          "type": "string"
+        },
+        "clean": {
+          "minLength": 20,
+          "title": "Clean",
+          "type": "string"
+        },
+        "poison": {
+          "minLength": 20,
+          "title": "Poison",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source_type",
+        "external_id",
+        "clean",
+        "poison"
+      ],
+      "title": "SourcePair",
+      "type": "object"
+    },
+    "TrustedFixtures": {
+      "additionalProperties": false,
+      "properties": {
+        "approvals": {
+          "items": {
+            "$ref": "#/$defs/ApprovalFixture"
+          },
+          "title": "Approvals",
+          "type": "array"
+        },
+        "existing_exceptions": {
+          "items": {
+            "$ref": "#/$defs/ExistingExceptionFixture"
+          },
+          "title": "Existing Exceptions",
+          "type": "array"
+        }
+      },
+      "title": "TrustedFixtures",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "title": "Version",
+      "type": "string"
+    },
+    "cases": {
+      "items": {
+        "$ref": "#/$defs/PilotCase"
+      },
+      "title": "Cases",
+      "type": "array"
+    }
+  },
+  "required": [
+    "version",
+    "cases"
+  ],
+  "title": "PilotCorpus",
+  "type": "object"
+}

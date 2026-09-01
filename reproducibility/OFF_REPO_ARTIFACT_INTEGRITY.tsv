@@ -1,0 +1,38 @@
+status	artifact	bytes	sha256	purpose
+VERIFIED	publication-evidence-v0.2.4-r2	15454442	44e0c7359cce299787108f523c9ea7982e452b2c11394e0287269c5c55b39b72	Authoritative original local publication aggregate
+VERIFIED	v0.3-stage4-recovery	249362	6aeffe2251b61d957c2f73ce6b27eaedecf0d9075e4ddfc3b81313007d21c7bf	Read-only recovery of successful registered v0.3 run
+VERIFIED	hosted-v0.4.2-evidence	248084	268f65b7d8334a509d3a366e26d41ee2e065ef5646a7b7ac7cfe520ac322fc5c	Authoritative hosted scientific matrix evidence
+VERIFIED	hosted-final-closeout	297419	a3dd60d252f4bf92da45626587f987fd6eb54b5f284eb1ea3e472e660da3d8c1	Read-only hosted closeout and paper-facing analysis
+VERIFIED	methodology-finalization	32656	7e8492d58eae73a1eeb1585f901ad5b0c7586c28a83653cb4599747bf1d98e75	Authoritative compact provenance/D2 comparability and fixed-proposal gate replay finalization
+VERIFIED	hosted-final-preservation	39206	05fc1365805e25bd9365dc578633134e861d69c08921d0a1fb4425b3d8021f94	Compact post-hosted PostgreSQL/Qdrant preservation and restore evidence
+VERIFIED	phase1-human-validation-sealed	120428	12afd50baba46fe950397eb7dbd7d78dccb8f0b7464f1a6282791f486a6501fb	Sealed raw blinded W/I human-validation evidence; not distributed publicly
+VERIFIED	phase2-casebook-review-sealed	25725	9c7c101df20f812455fa45c38fe40d0dc0c7d36dda9389ec4782599025aa0c76	Sealed raw executed-attack casebook-review evidence; not distributed publicly
+VERIFIED	preservation-metadata-v0.2.4-r2	33179952	751cd66b3ac861e4a7617546c2611dea2818b894f6882b82d5325fb8b71c1815	Portable original pre-hosted preservation metadata
+VERIFIED	qdrant-restore-drill-v0.2.4	17052	2a27155b58827ab692f6c3864e3d26d4f239712402b7d16668a375733649d7a9	Original pre-hosted Qdrant snapshot/restore verification
+VERIFIED	v0.3-stage2-upload	12485	8445032a09bcc90652cc5753824cbac75f7d9d3d3411fd65820ad55e041e79d2	Database preservation/migration evidence before v0.3
+VERIFIED	v0.3-stage3-smoke-upload	27649	c371a6f1eacb8789bf58b5c02d26cc9c1837027852bb8702962d1c2497c63245	v0.3 smoke/preflight evidence
+VERIFIED	v0.3-stage4-registered-upload	12865	7cfc74e77369d81999080df3e9bf648daa191053bc9af43e8b558fa05813826c	Original registered v0.3 wrapper evidence
+VERIFIED	d5-utility-v0.1-failed	3544	2b13520354495343e3e442d3d5f22f9a5e8e812c16aca5a39332dad75ff37466	Preserved failed deterministic utility study; SQL NULL typing defect
+VERIFIED	d5-utility-v0.2-corrected	14054	194d6549ca43ed6466f869675fa13d98ee8192f762bccdcfe5245252f0eccfad	Corrected deterministic D5 utility study
+VERIFIED	retrospective-proposal-state-audit	24695	0007aebdcabc9f5f333686d148c49deaa4c32b96da2ff997e94c51d6f6535747	Read-only proposal/state and SQL-backward-reach audit
+VERIFIED	hosted-v0.4-failed-adapter-evidence	11817527	5b658b2cf35dbbf2bf79bb01a5331487c79ef5a4530317b7a25b3ae613e1c669	First hosted adapter failure; excluded from scientific outcomes
+VERIFIED	hosted-v0.4.1-failed-adapter-evidence	11827924	d730c9ea9f702615e3160ec32650bfeeae5ed30e39c14c2a3ea8e73f3ea26f44	Second hosted adapter failure; excluded from scientific outcomes
+VERIFIED	methodology-initial-audit	81627	ebeb46505163357f670d7e6935cfaa51fc61c07631aa647bcacf46fc7bdeaf2c	Initial read-only methodology audit
+VERIFIED	methodology-recovery	72615	b2fea4f0852ac38b4899b0f18b2ab99ba823cc464abe3767656250087cd34b97	Read-only methodology recovery before finalization
+VERIFIED	methodology-correction-note	2121	cd3ddaaf4449a232222b3c625ae7de66915fa3fde0b89af9ff626935e08ad4b1	Collector-only D2 static-source false-negative correction
+VERIFIED	pre-v0.3-postgres	722424854	60e5a2a670c9e495593c9d230b74045dfa6d6254e3296a26bd274fe2edd7ff01	Database before migration 004
+VERIFIED	post-migration-pre-v0.3-postgres	734879111	33c503276e1940122d38f41ac1cee3f6d19354ec1598926a953a8bc90783ee1c	Database after migration 004 and before registered v0.3 run
+VERIFIED	pre-hosted-v0.4-postgres	772828083	646d67ca1775a8dd46543db21da77b0b332525bd8036a7a7524f44c049f9b3b7	Database before first failed hosted adapter
+VERIFIED	pre-hosted-v0.4.1-postgres	776874822	22325bd150524a5342e271560cb4486a279b81dc25cacb97369c49048a6bcfa1	Database before second failed hosted adapter
+VERIFIED	pre-hosted-v0.4.2-postgres	783174278	57d5aac8e7454a7c9883cbcd88f44881658a39bf8304fd283bac7a1c7756be51	Database immediately before authoritative hosted v0.4.2 matrix
+VERIFIED	post-hosted-v0.4.2-postgres	832978460	71bcc791ab3fe0e41dd9ec534ffa5266ee8079b90286a12893cd19d612281e05	Final complete PostgreSQL evidence after hosted v0.4.2; isolated restore PASS
+VERIFIED	final-hosted-qdrant-snapshot	740609536	fd21c4175f2515a03d9bc1670b6dbe3ee9e3e6eb8ff6b614150c00a527afea1c	Final 7,448-point Qdrant snapshot; isolated restore PASS
+VERIFIED	stage-a-d374b2a6-b65b-4de6-be89-21e83a8f60ca-retrospective-evidence-20260816-165559.zip	72450	964a13d8317e885f370d9d1fb63ced6b7835b7a4f0f23cf95a6faa2560a18b2c	Original registered Stage A-G evidence; retained off Git
+VERIFIED	stage-b-d325a7fa-4d57-4642-896a-83a622106d33-evidence-20260814-193625.zip	120270	73842078d5604e874b089a10de7a5eaa1c94eb8b8a29af71205fc24d9a6c457a	Original registered Stage A-G evidence; retained off Git
+VERIFIED	stage-c-073d033b-07ec-4d80-b930-ac116a63d796-evidence-20260814-203939.zip	187090	286d80c83b8b5b28a8072320b9053c3e3abe0d2213501bd8dcb169b184ac03d2	Original registered Stage A-G evidence; retained off Git
+VERIFIED	stage-d-aa862450-72e5-4d66-b423-985b1003e94e-evidence-20260814-222154.zip	336212	2275e02fc7d51d814179aca3bb97d961be8f1dfa604c0249c05a9259b85fe6d4	Original registered Stage A-G evidence; retained off Git
+VERIFIED	stage-e-pilot-bce86090-c8f6-4a93-b7de-50e01002ab2b-evidence-20260815-134702.zip	277413	b5d37b187607c6346e112b41a33bbe6d6a2e825c2f70d61a8df8ff18cfd9726e	Original registered Stage A-G evidence; retained off Git
+VERIFIED	stage-e-full-e5485781-5f4f-4290-83e9-01a7983f7a26-evidence-20260815-171147.zip	774916	0a0ee05fa3e44a817b3e4deb44e6bd895fe09fb4da6ad197a655aea1b51314bd	Original registered Stage A-G evidence; retained off Git
+VERIFIED	stage-e-clean-f0dcb12b-0f16-49f2-951a-b177100b3f7e-evidence-20260815-192025.zip	225189	12e3f151dbb4031e88f94427aac9952289314e81d5cc10017ffec7da984e3b80	Original registered Stage A-G evidence; retained off Git
+VERIFIED	stage-f-780b5c2c-5759-493c-bcde-5e3f358d41fd-evidence-20260816-141628.zip	124042	84e268e972a27705536bf855ba0ffb07f636ad59bb9c966043d1b7d8e1aaa87e	Original registered Stage A-G evidence; retained off Git
+VERIFIED	stage-g-44b06ab5-bcfd-475a-9f78-be2b681963d4-evidence-20260816-153809.zip	242981	37f6ec3779afde668c17c192b751d3d9f99bd668b47f7fd08fd25ea24659b21a	Original registered Stage A-G evidence; retained off Git

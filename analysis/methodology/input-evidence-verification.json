@@ -1,0 +1,14 @@
+{
+  "failed_audit": {
+    "crc_passed": true,
+    "manifest_entries": 30,
+    "path": "<LOCAL_RESEARCH_ROOT>/mhb-readonly-methodology-audit-evidence/mhb-readonly-methodology-audit-v0.1-20260822-162544-UPLOAD.zip",
+    "sha256": "ebeb46505163357f670d7e6935cfaa51fc61c07631aa647bcacf46fc7bdeaf2c"
+  },
+  "recovery": {
+    "crc_passed": true,
+    "manifest_entries": 24,
+    "path": "<LOCAL_RESEARCH_ROOT>/mhb-readonly-methodology-audit-evidence/mhb-readonly-methodology-audit-recovery-v0.1-20260822-163541-UPLOAD.zip",
+    "sha256": "b2fea4f0852ac38b4899b0f18b2ab99ba823cc464abe3767656250087cd34b97"
+  }
+}

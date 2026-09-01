@@ -1,0 +1,14 @@
+status=PASS_REGISTERED_RUN_RECOVERED_AND_AUDITED
+exit_code=0
+last_step=complete
+generated_at=2026-08-18T20:11:32+12:00
+run_id=ccb18380-6419-4855-8fc1-731132e630cc
+registered_label=counterfactual-v0.3-registered-20260818-182237
+recovery_only=true
+inference_executed_by_this_script=false
+rerun_performed=false
+original_registered_evidence=<LOCAL_RESEARCH_ROOT>/mhb-v03-stage4-evidence/registered-20260818-182237
+expected_pairs=192
+expected_trials=384
+expected_protocol_hash=dafb650facfe9db15683ecbaa00c6071695210d2202414f46fcdee47ee48318c
+expected_design_fingerprint=8eda1eb6a9641f5d7871b9b843ab38e5ada1c62616962f3b111780b65ec18675

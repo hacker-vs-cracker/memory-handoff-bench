@@ -1,0 +1,17 @@
+{
+  "experiment": {
+    "actual": "7f4311b638cb39a98116b676e0596ee047a87804f4b3772df6306ede23883586",
+    "expected": "7f4311b638cb39a98116b676e0596ee047a87804f4b3772df6306ede23883586",
+    "passed": true
+  },
+  "prompts": {
+    "actual": "d156aca9806d031c891d71384760aeb81acc2fe4c5a405b38666df27aa19f249",
+    "expected": "d156aca9806d031c891d71384760aeb81acc2fe4c5a405b38666df27aa19f249",
+    "passed": true
+  },
+  "protocol_lock": {
+    "actual": "17eeb49d6dcfc0e9998982dc26367867f0bcc6361f281828982281328879abf0",
+    "expected": "17eeb49d6dcfc0e9998982dc26367867f0bcc6361f281828982281328879abf0",
+    "passed": true
+  }
+}
